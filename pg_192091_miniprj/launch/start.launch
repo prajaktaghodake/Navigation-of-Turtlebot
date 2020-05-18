@@ -1,0 +1,6 @@
+<launch>
+    <include file="$(find goal_publisher)/launch/goal_publisher.launch"/>
+    <node pkg="pg_192091_miniprj" type="obstacle.py" name="reading_laser" />
+    <node pkg="pg_192091_miniprj" type="point.py" name="go_to_point" />
+    <node pkg="pg_192091_miniprj" type="main.py" name="bug2" output="screen" />
+</launch>
